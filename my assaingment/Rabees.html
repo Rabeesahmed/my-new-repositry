@@ -1,0 +1,84 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with Labels and Placeholders</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+
+    .form-container {
+      background: white;
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    <form action="/submit-form" method="post">
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Password" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
+</body>
+</html>
+</body>
+</html>
